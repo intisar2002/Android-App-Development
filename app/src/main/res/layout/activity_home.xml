@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- شريط علوي -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#1A237E"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="6dp"
+        android:gravity="start"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_gravity="start" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- المحتوى -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:background="#FFFFFF">
+
+        <!-- بدون أيقونة أو صورة -->
+
+        <!-- نص الترحيب -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="5dp" />
+
+        <!-- اسم المستخدم -->
+        <TextView
+            android:id="@+id/tvWelcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="24sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="10dp" />
+
+        <!-- التاريخ -->
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday, 11 August 2026"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="15dp" />
+
+
+
+        <!-- أزرار -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="30dp">
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#1976D2"
+                android:layout_marginEnd="10dp"
+                android:elevation="6dp" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#1565C0"
+                android:layout_marginStart="10dp"
+                android:elevation="6dp" />
+        </LinearLayout>
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#1A237E"
+            android:elevation="10dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
